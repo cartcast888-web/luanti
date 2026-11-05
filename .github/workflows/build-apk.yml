@@ -13,6 +13,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+            - name: Instalar gettext
+        run: sudo apt-get update && sudo apt-get install -y gettext
       - name: Compilar Luanti Android
         run: |
           cd android
